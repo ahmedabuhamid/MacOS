@@ -29,10 +29,6 @@
 ABOUT_THIS_SCRIPT
 
 user=`stat -f "%Su" /dev/console`
-user_home="/Users/$user"
-plist="${user_home}/Library/Containers/com.microsoft.Outlook/Data/Library/Preferences/com.microsoft.Outlook.plist"
-
-
 
 outlook_interface=`sudo -u $user defaults read com.microsoft.Outlook IsRunningNewOutlook`
 
